@@ -1,0 +1,125 @@
+REPASO DE PYTHON 
+
+COMENTARIOS DIFERENTES
+
+# ASI SE COMENTA UNA LINEA DE CODIGO
+
+''' ASI SE COMENTA UN BLOQUE DE CODIGO'''
+
+las variables se declaran en linea al vuelo ejemplo
+
+numero=0
+numero=0.3
+string="hola mundo"
+caracter="h"
+bool=true
+
+
+etc
+----------------------------------------------------------------------------------
+NO EXISTEN LLAVES EN LUGAR DE ESO SE OCUPAN LOS :
+   Y LA INDENTACION LO QUE ESTA ADENTRO ES 
+   DE UNA INSTRUCION
+----------------------------------------------------------------------------------
+CADENAS EJEMPLO
+
+numeros[1,2,3,4,5]
+palabras ["hola","mundo"]
+-----------------------------------------------------------------------------------
+IMPUT 
+
+es la declaracion para recuperar lo ingresado por teclado esto siempre es un string
+
+pero se puede castear de la siguiente forma
+
+
+si es string:
+nombre=imput("ingrese el nombre")
+si es entero
+numero=int(input("ingrese un numero"))
+y asi sucesivamente con el int despues del igual le decimos a python que lo convierata 
+a entero o a lo que le pongamos en esa posicion
+-------------------------------------------------------------------------------------
+FUNCIONES 
+
+DEF suma():
+     instruciones 
+def resta():
+     instruciones
+
+
+en los parametros no se declara el tipo solo el nombre que tendra
+ejemplo
+
+def sumar(num1,num2):
+       return num1+num2
+
+------------------------------------------------------------------------------------
+
+DICIONARIO
+
+paises={"argentina":40000000, 
+        "españa":46000000, 
+        "brasil":190000000,
+        "uruguay": 3400000}
+
+PARA RECORRER EL DICIONARIO SE ESPECIFICA LLAVE , OBJETO [NUMERO]
+
+def imprimir(paises):
+    for clave in paises:
+        print(clave, paises[clave])
+--------------------------------------------------------------------------------
+class Alumno:
+
+    def inicializar(self,nombre,nota):
+        self.nombre=nombre
+        self.nota=nota
+
+    def imprimir(self):
+        print("Nombre:",self.nombre)
+        print("Nota:",self.nota)
+
+    def mostrar_estado(self):
+        if self.nota>=4:
+            print("Regular")
+        else:
+            print("Libre")
+
+def __init__(self):
+        self.nombre=input("Ingrese el nombre del empleado:")
+        self.sueldo=float(input("Ingrese el sueldo:"))
+
+DEF __INIT__ es el primer metodo que se llama de un objeto y este por lo general 
+sustitulle al inicializar de arriba este metodo no puede retornar valores
+
+en este caso cargamos por teclado  los atrbutos del objeto pero se pueden pasar parametros
+a este metodo init tambien y solo definirlo a dentro del bloque de este metodo
+
+
+self se ocupa para llamar a atributos o metods internamente de la misma clase
+
+
+self.metodoallamar
+self.nombre   // que este es un atributo del objeto 
+
+HERENCIA DE CLASES
+
+ESTA SE PONE EN PARENTESIS
+
+class Empleado(Persona):
+
+LA CLASE EMPLEADO HEREDA LAS CARACTERISTICAS DE LA CLASE PERSONA
+--------------------------------------------------------------------------
+
+IMPRIMIR UN OBJETO 
+def __str__(self):
+        cadena=self.nombre+","+self.apellido
+        return cadena
+
+
+CON EL metodo __str__ le decimos que imprimir cuando ejecutamos un print a un objeto
+
+ -------------------------------------------------------------------------
+
+
+
